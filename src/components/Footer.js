@@ -1,13 +1,14 @@
 import React from 'react';
+import '../styles/Footer.css';
 
 
 const Footer=(props)=>(
     <div className="footer">
-        <h5>This app is developed by Arijit Deb</h5>
+        <h4>{props.subTitle}</h4>
         <nav>
-            <a href="https://twitter.com/ArijitD03566685">Find on Twitter</a> | 
-            <a href="https://www.facebook.com/arijitdebd">Find on facebook</a> | 
-            <a href="https://www.linkedin.com/in/arijit-deb-test-engineer/">Find on linked In</a> |
+            <a className="footer--links" href={props.twitterProfile}>Find on Twitter</a> | 
+            <a className="footer--links" href={props.faceBookProfile}>Find on facebook</a> | 
+            <a className="footer--links" href={props.linkedinProfile}>Find on linkedIn</a> |
         </nav>
     </div>
 )

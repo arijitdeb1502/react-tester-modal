@@ -1,12 +1,13 @@
 .header{
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background:darkslategray;
     color: white;
-    display: flex;
     flex-direction: column;
-    border: 1px solid darken(darkslategray,10%);
+    border: 1px solid darken(darkslategray,100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
     margin: 0;
-    border: 0;
     padding: 0;
 }
 
