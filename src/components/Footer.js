@@ -4,17 +4,11 @@ import React from 'react';
 const Footer=(props)=>(
     <div className="footer">
         <h5>This app is developed by Arijit Deb</h5>
-        <ul>
-            <li>
-                <a href="linkedin.com/in/arijit-deb-test-engineer">linked in profile</a>
-            </li>
-            <li>
-                <p>Call me @ +6598582504</p>
-            </li>
-            <li>
-                <p>Email me @ arijitdeb.work@gmail.com</p>
-            </li>
-        </ul>
+        <nav>
+            <a href="https://twitter.com/ArijitD03566685">Find on Twitter</a> | 
+            <a href="https://www.facebook.com/arijitdebd">Find on facebook</a> | 
+            <a href="https://www.linkedin.com/in/arijit-deb-test-engineer/">Find on linked In</a> |
+        </nav>
     </div>
 )
 
