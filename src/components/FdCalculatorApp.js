@@ -4,11 +4,12 @@ import Footer from './Footer';
 import Body from './Body';
 import ResultModal from './ResultModal';
 
-export default class FileValidatorApp extends React.Component {
+export default class FdCalculatorApp extends React.Component {
 
   constructor(props){
     super(props);
     this.handleCalculateFd=this.handleCalculateFd.bind(this);  
+    this.handleModalButton=this.handleModalButton.bind(this);
     
     this.state = {
       result: 0,
@@ -16,6 +17,13 @@ export default class FileValidatorApp extends React.Component {
     }
   }
 
+  handleModalButton(){
+    this.setState(()=>{
+      return {
+         visibility: false
+      }
+   })
+  }
   handleCalculateFd(finalFdAmt){
 
       
@@ -31,14 +39,14 @@ export default class FileValidatorApp extends React.Component {
   render(){
     return(
       <div>
-        <Header title="File Validator App" 
-                subTitle="An app to validate file layout"
+        <Header title="Fixed Deposit Calculator App" 
+                subTitle="An app to calculate Fixed Deposit"
         />
-        <Body handleCalculateFd={this.handleCalculateFd}
+        <Body handleCalculateFd={this.handleCalculateFd}  />
+        <ResultModal
               visibility={this.state.visibility}
               result={this.state.result}
-        />
-        <ResultModal
+              handleModalButton={this.handleModalButton}
         />
         <Footer subTitle="+6598582504"
                 subTitleEmail="arijitdeb.work@gmail.com"

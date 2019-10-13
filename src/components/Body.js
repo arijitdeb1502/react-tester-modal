@@ -45,11 +45,6 @@ class Body extends React.Component{
 
                 }
                 
-                {   
-                    this.props.visibility && 
-                    <p >Result: {this.props.result} </p>
-                }
-                
             </div>
         )
     }

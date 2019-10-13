@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/Index.css';
-import FileValidatorApp from './components/FileValidatorApp';
+import FdCalculatorApp from './components/FdCalculatorApp';
 
-ReactDOM.render(<FileValidatorApp />, document.getElementById('root'));
+ReactDOM.render(<FdCalculatorApp />, document.getElementById('root'));
